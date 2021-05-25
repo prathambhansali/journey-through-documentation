@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Ngx Confirm',
   tagline: 'Angular Ui Component Library',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://npx-confirm.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
