@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'Angular Ui Component Library',
   url: 'https://npx-confirm.netlify.app/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'pratham-10', 
