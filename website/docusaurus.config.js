@@ -7,8 +7,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'pratham-10', // Usually your GitHub org/user name.
-  projectName: 'ngx-confirm-documentation', // Usually your repo name.
+  organizationName: 'pratham-10', 
+  projectName: 'ngx-confirm-documentation', 
   themeConfig: {
     liveCodeBlock: {
       playgroundPosition: 'bottom',
@@ -44,10 +44,6 @@ module.exports = {
               label: 'Tutorial',
               to: '/docs/intro',
             },
-            {
-              label: 'Blogs',
-              to: '/blog',
-            },
           ],
         },
         {
@@ -70,7 +66,10 @@ module.exports = {
         {
           title: 'More',
           items: [
-           
+            {
+              label: 'Blogs',
+              to: '/blog',
+            },
           ],
         },
       ],
