@@ -1,97 +1,129 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Ngx Confirm',
-  tagline: 'Angular Ui Component Library',
-  url: 'https://npx-confirm.netlify.app/',
-  baseUrl: '/',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'pratham-10', 
-  projectName: 'ngx-confirm-documentation', 
+  title: "Journey in Documnetation",
+  tagline: 'tagline',
+  url: "https://npx-confirm.netlify.app/",
+  baseUrl: "/",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/white.png",
+  organizationName: "pratham-10",
+  projectName: "imp-documentation",
   themeConfig: {
     liveCodeBlock: {
-      playgroundPosition: 'bottom',
+      playgroundPosition: "bottom",
     },
+    plugins: ["@docusaurus/theme-live-codeblock"],
     navbar: {
-      title: 'Ngx Confirm',
+      title: "Prathmesh Bhansali",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Site Logo",
+        src: "img/favicon.png",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
+          type: "doc",
+          docId: "intro",
+          position: "right",
+          label: "Tutorial",
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/facebook/docusaurus",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
+      logo: {
+        alt: "Site Logo",
+        src: "img/logo.png",
+      },
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: "LinkedIn",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            },
+            {
+              label: "Twitter",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            },
+            {
+              label: "Facebook",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            },
+            {
+              label: "Instagram",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
           ],
         },
         {
-          title: 'Connect us',
+          title: "Connect us",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "GitHub",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: 'GitLab',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "GitLab",
+              href: "https://discordapp.com/invite/docusaurus",
             },
             {
-              label: 'NPM',
-              href: 'https://twitter.com/docusaurus',
+              label: "NPM",
+              href: "https://twitter.com/docusaurus",
             },
           ],
         },
         {
-          title: 'More',
+          title: "Blogs",
           items: [
             {
-              label: 'Blogs',
-              to: '/blog',
+              label: "Medium",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            },
+            {
+              label: "Hashnode",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            },
+            {
+              label: "Dev.to",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} @nikiphoros/Ngx Confirm.`,
+      copyright: `Copyright © ${new Date().getFullYear()} @codesleuth/Prathmesh Bhansali.`,
     },
   },
-  plugins: ['@docusaurus/theme-live-codeblock'],
+  
   presets: [
     [
-      '@docusaurus/preset-classic',
-      {
+      "@docusaurus/preset-classic",
+      {        
+        debug: true,
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:'https://github.com/pratham-10/ngx-confirm-documentation.git',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl:
+            "https://github.com/pratham-10/ngx-confirm-documentation.git",
         },
         blog: {
           showReadingTime: true,
-          editUrl:'https://github.com/pratham-10/ngx-confirm-documentation.git',
+          editUrl:
+            "https://github.com/pratham-10/ngx-confirm-documentation.git",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
+        pages: {},
+        // Will be passed to @docusaurus/plugin-content-sitemap (false to disable)
+        sitemap: {},
+        plugins: ['plugin-content-blog'],
       },
     ],
   ],
