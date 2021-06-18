@@ -101,7 +101,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} @codesleuth/Prathmesh Bhansali.`,
     },
   },
-  
   presets: [
     [
       "@docusaurus/preset-classic",
